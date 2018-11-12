@@ -21,26 +21,92 @@
         <![endif]-->
 
         <header id="header">
-            <img id="header-img" src="img/logo1.png" />
+            <img id="header-img" src="img/logo1.png" alt="Logo" height="300px" />
             <nav id="nav-bar">
                 <ul>
-                    <li><a href="#video-sec" class="nav-link">Video</a></li>
-                    <li><a href="#boards-sec" class="nav-link">Chessboards</a></li>
-                    <li><a href="#prices-sec" class="nav-link">Prices</a></li>
+                    <li><a href="#sec__register" class="nav-link">Register</a></li>
+                    <li><a href="#sec__video" class="nav-link">Video</a></li>
+                    <li><a href="#sec__prices" class="nav-link">Prices</a></li>
                 </ul>
             </nav>
         </header>
 
         <div id="main">
-            <form id="form" action="https://www.freecodecamp.com/email-submit">
-                <input id="email" name="email" type="email" placeholder="Enter your email address." required />
-                <input id="submit" type="submit" value="Register!" />
-            </form>
-            <section id="video-sec">
+            <section id="sec__register">
+                <h2>Register</h2>
+                <form id="form" action="https://www.freecodecamp.com/email-submit">
+                    <input id="email" name="email" type="email" placeholder="Enter your email address." required />
+                    <input id="submit" type="submit" value="Register!" />
+                </form>
+            </section>
+            <section id="sec__video">
+                <h2>Video</h2>
                 <iframe id="video" width="640" height="360" src="https://www.youtube.com/embed/Or4XAgtyrSU"></iframe>
             </section>
-            <section id="boards-sec"></section>
-            <section id="prices-sec"></section>
+            <section id="sec__prices">
+                <h2>Prices</h2>
+                <table id="tab__prices">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Name</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>#10</td>
+                            <td>Medieval Venice</td>
+                            <td>$30,545</td>
+                        </tr>
+                        <tr>
+                            <td>#9</td>
+                            <td>Renault F1 Team Collection</td>
+                            <td>$43,000</td>
+                        </tr>
+                        <tr>
+                            <td>#8</td>
+                            <td>Silver Jubilee</td>
+                            <td>$77,880</td>
+                        </tr>
+                        <tr>
+                            <td>#7</td>
+                            <td>Carolingians & Moors</td>
+                            <td>$96,075</td>
+                        </tr>
+                        <tr>
+                            <td>#6</td>
+                            <td>Carolingi XIV</td>
+                            <td>$113,580</td>
+                        </tr>
+                        <tr>
+                            <td>#5</td>
+                            <td>Baccarat Crystal</td>
+                            <td>$287,684</td>
+                        </tr>
+                        <tr>
+                            <td>#4</td>
+                            <td>Royal Diamond</td>
+                            <td>$600,000</td>
+                        </tr>
+                        <tr>
+                            <td>#3</td>
+                            <td>J. Grahl</td>
+                            <td>$700,000</td>
+                        </tr>
+                        <tr>
+                            <td>#2</td>
+                            <td>Art of War</td>
+                            <td>$750,000</td>
+                        </tr>
+                        <tr>
+                            <td>#1</td>
+                            <td>Jewel Royale</td>
+                            <td>$9,800,000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
         </div>
 
         <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>

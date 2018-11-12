@@ -96,8 +96,68 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+:root {
+    --header-height: 400px;
+}
 
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: var(--header-height);
+    background-color: white;
+}
 
+#header-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#main {
+    padding-top: var(--header-height);
+}
+
+/* Offset anchor for fixed header */
+:target::before {
+    content: '';
+    display: block;
+    height: var(--header-height);
+    margin: calc(-1 * var(--header-height)) 0 0;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+}
+
+#tab__prices {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#tab__prices td,
+#tab__prices th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#tab__prices tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#tab__prices tr:hover {
+    background-color: #ddd;
+}
+
+#tab__prices th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4caf50;
+    color: white;
+}
 
 /* ==========================================================================
    Helper classes
